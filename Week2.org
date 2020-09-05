@@ -17,16 +17,29 @@ The ID, from git log, can be used to see changes to specific commits.
 
 # (Uncommitted checkpoint, to be read in ** Rollbacks context)
 
-* Undoing Things
+
+* [[https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things][Undoing Things]]
 
 ** Undoing Changes Before Committing
 - deletion in stage
 
+git checkout, without any arguments, undo the changes staged
+
+
 ** Amending Commits
-+ redoing
++ redoing, completing commit "leftovers"
+# After an initial incomplete commit
+git add file-we-leftover
+git commit --amend
+
+*** Warning
+Not to be used frequently on shared repositories, because of confusions, related
+to the history of commits and changes.
+
 
 ** Rollbacks
 
+*** Revert
 Sending a commit till this point (maked in *).
 git commit -a -m "Regular update of notes, after a class" *
 
@@ -35,3 +48,30 @@ git revert HEAD
 
 Unsuccessful! But, no worries. We will learn in the next topic how to Rollback
 further.
+
+*** Reset
+From the [[https://git-scm.com/docs/git-reset#_examples][Documentation]]
+"$ git commit ...
+$ git reset --soft HEAD^      (1)
+$ edit                        (2)
+$ git commit -a -c ORIG_HEAD  (3)
+
+This is most often done when you remembered what you just committed is incomplete,
+or you misspelled your commit message, or both. Leaves working tree as it was
+before "reset".
+
+Make corrections to working tree files.
+
+"reset" copies the old head to .git/ORIG_HEAD; redo the commit by starting with
+its log message. If you do not need to edit the message further, you can give -C
+option instead."
+
+
+** Identifying a Commit
+
+*** Revert to an Specific point
+git revert ID-wanted-to-revert_to
+
+*** Collisions compares to Miracles
+From Thoughts:
+[[file:~/PP/Org/Thoughts/HowCollisionsWork.org::*Miracles][How Collisions Work, related to Miracles]]
