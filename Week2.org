@@ -32,3 +32,6 @@ git commit -a -m "Regular update of notes, after a class" *
 
 Rolling back till the comment, #, before the Undoing Things topic
 git revert HEAD
+
+Unsuccessful! But, no worries. We will learn in the next topic how to Rollback
+further.
