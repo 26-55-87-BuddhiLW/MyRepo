@@ -15,7 +15,7 @@ Show all log
 ** git show ID
 The ID, from git log, can be used to see changes to specific commits.
 
-# (Uncommitted checkpoint, to be read in ** Rollbacks context)
+(Uncommitted checkpoint, to be read in ** Rollbacks context)
 
 * Undoing Things
 
@@ -28,7 +28,4 @@ The ID, from git log, can be used to see changes to specific commits.
 ** Rollbacks
 
 Sending a commit till this point (maked in *).
-git commit -a -m "Regular update of notes, after a class" *
-
-Rolling back till the comment, #, before the Undoing Things topic
-git revert HEAD
+git commit -a -m "Regular update of notes, after a class"
