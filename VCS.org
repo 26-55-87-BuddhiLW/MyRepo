@@ -1,0 +1,24 @@
+* diff and patch - Version Control System (VCS)
+
+** diff
+
+*** diff file1 file2
+Demonstrate differences between files file1 and file2
+
+*** diff -u file1 file2
+Demonstrate differences between files file1 and file2, line by line, in the same
+file
+
+
+** patch. Applying diff-erences between two files
+# there are file1.ext and file2.ext.
+# diff file1.ext file2.ext > file.diff
+# using file.diff, with patch.
+patch file1.ext < file.diff
+# the fil1.ext, now, is updated
+
+
+* VCS per se
+** System which stores files
+** Keep all the changes histories
+** Who, how, and when changed -- Why
