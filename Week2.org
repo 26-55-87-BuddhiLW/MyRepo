@@ -48,11 +48,11 @@ Unsuccessful! But, no worries. We will learn in the next topic how to Rollback
 further.
 
 *** Reset
-From the [[https://git-scm.com/docs/git-reset#_examples][Documentation]] </br>
-"$ git commit ... </br>
-$ git reset --soft HEAD^      (1)</br>
-$ edit                        (2)</br>
-$ git commit -a -c ORIG_HEAD  (3)</br>
+From the [[https://git-scm.com/docs/git-reset#_examples][Documentation]],
++ $ git commit ...
++ $ git reset --soft HEAD^      (1)
++ $ edit                        (2)
++ $ git commit -a -c ORIG_HEAD  (3)
 
 This is most often done when you remembered what you just committed is incomplete,
 or you misspelled your commit message, or both. Leaves working tree as it was
