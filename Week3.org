@@ -9,4 +9,4 @@
 
 ** Merge
 
-*** Three-Way-Merge
+*** Fast-Forward-Merge
