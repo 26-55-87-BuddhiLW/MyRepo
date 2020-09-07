@@ -25,14 +25,6 @@ The ID, from git log, can be used to see changes to specific commits.
 
 git checkout, without any arguments, undo the changes staged
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
 ** Amending Commits
 + redoing, completing commit "leftovers"
 # After an initial incomplete commit
@@ -42,14 +34,6 @@ git commit --amend
 *** Warning
 Not to be used frequently on shared repositories, because of confusions, related
 to the history of commits and changes.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
 
 ** Rollbacks
 
@@ -64,11 +48,11 @@ Unsuccessful! But, no worries. We will learn in the next topic how to Rollback
 further.
 
 *** Reset
-From the [[https://git-scm.com/docs/git-reset#_examples][Documentation]]
-"$ git commit ...
-$ git reset --soft HEAD^      (1)
-$ edit                        (2)
-$ git commit -a -c ORIG_HEAD  (3)
+From the [[https://git-scm.com/docs/git-reset#_examples][Documentation]] </br>
+"$ git commit ... </br>
+$ git reset --soft HEAD^      (1)</br>
+$ edit                        (2)</br>
+$ git commit -a -c ORIG_HEAD  (3)</br>
 
 This is most often done when you remembered what you just committed is incomplete,
 or you misspelled your commit message, or both. Leaves working tree as it was
@@ -80,14 +64,6 @@ Make corrections to working tree files.
 its log message. If you do not need to edit the message further, you can give -C
 option instead."
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
-=======
-
->>>>>>> b2780ef... Finishing annotating before finishing Week2
 ** Identifying a Commit
 
 *** Revert to an Specific point
@@ -96,9 +72,6 @@ git revert ID-wanted-to-revert_to
 *** Collisions compares to Miracles
 From Thoughts:
 [[file:~/PP/Org/Thoughts/HowCollisionsWork.org::*Miracles][How Collisions Work, related to Miracles]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
 * Branching
 ** Creating a Branch
@@ -113,7 +86,3 @@ From Thoughts:
 *** Cases Without Merging Conflict
 
 *** Cases Which Merging Conflicts
-=======
->>>>>>> b2780ef... Finishing annotating before finishing Week2
-=======
->>>>>>> b2780ef... Finishing annotating before finishing Week2
