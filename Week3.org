@@ -9,8 +9,6 @@
 
 ** Merge
 
-<<<<<<< HEAD
 *** Fast-Forward-Merge
-=======
+
 *** Three-Way-Merge
->>>>>>> week3-merge-conflit
