@@ -25,7 +25,14 @@ The ID, from git log, can be used to see changes to specific commits.
 
 git checkout, without any arguments, undo the changes staged
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
+=======
+
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
 ** Amending Commits
 + redoing, completing commit "leftovers"
 # After an initial incomplete commit
@@ -35,7 +42,14 @@ git commit --amend
 *** Warning
 Not to be used frequently on shared repositories, because of confusions, related
 to the history of commits and changes.
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
+=======
+
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
 
 ** Rollbacks
 
@@ -66,7 +80,14 @@ Make corrections to working tree files.
 its log message. If you do not need to edit the message further, you can give -C
 option instead."
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
+=======
+
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
 ** Identifying a Commit
 
 *** Revert to an Specific point
@@ -75,3 +96,24 @@ git revert ID-wanted-to-revert_to
 *** Collisions compares to Miracles
 From Thoughts:
 [[file:~/PP/Org/Thoughts/HowCollisionsWork.org::*Miracles][How Collisions Work, related to Miracles]]
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+* Branching
+** Creating a Branch
+** Checking Out Branches
+
+*** Step by Step
+
+*** Creating and Checking It Out at Once.
+
+** Merging
+
+*** Cases Without Merging Conflict
+
+*** Cases Which Merging Conflicts
+=======
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
+=======
+>>>>>>> b2780ef... Finishing annotating before finishing Week2
