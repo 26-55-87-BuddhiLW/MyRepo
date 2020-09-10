@@ -12,3 +12,43 @@
 *** Fast-Forward-Merge
 
 *** Three-Way-Merge
+
+
+* Remote Repositories
+
+Git server -> local repositories -> GitHub
+
+** GitHub
+
+*** Changes to GitHub
+Write code, locally, on your computer -> push to Git repository
+
+*** Sync
+Pull the RR(Remote Repository), then, Merge with your own. At this point,
+you will be able to push back to RR with no conflicts.
+
+
+** General workflow
+
+Modify, stage, commit; fetch any new changes from remote; merge; finally, push!
+
+
+** Git remote
+To verify to where origin points to. You can have different addresses from where
+you fetch. And to where you pull. It will work, as long as the content of both
+are the same.
+
+But, generally, they will point to the same url.
+
+- $ git remote -v
+
+** Git Branches
+Objective: to be able to push contents to the remote, without conflicts.
+*** At the command line
+Visualize branches and states
+- $git branches -r
+
+*** Workflow
+Pull new changes from other branches to the local branch;
+
+# New changes, which do not exist on master
